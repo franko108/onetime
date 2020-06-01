@@ -1,0 +1,81 @@
+.hero-body {
+  /*background-image: url(https://farm3.staticflickr.com/2840/33942486610_e0c80a7999_o_d.jpg);*/
+  /*background-image: url('flower.jpg');*/
+  background-image: linear-gradient(#3287F5, #698fbf);
+  background-position: center;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  height: 300px;
+  /*background-color: blue;*/
+}
+
+h1.title {
+  margin-top: 145px;
+    color: #363636;
+}
+
+h3.has-text-centered {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 1.5rem;
+}
+
+.articles {
+  margin: 5rem 0;
+  margin-top: 5rem;
+  margin-top: -220px;
+}
+
+.create-form {
+    color: #363636;
+}
+
+.button.is-primary {
+  width: 100%;
+  background-color: #3e84de;
+}
+
+.a.button {
+  width: 100%;
+  background-color: #3e84de;
+}
+
+
+.button.is-primary:hover {
+    background-color: #1176a7f2;
+}
+
+textarea {
+  width:100%;
+  height: 100px;
+}
+.textwrapper {
+  border:1px solid #999999;
+  margin:5px 0;
+  padding:3px;
+}
+
+.error {
+    color: red;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #3287F5;
+   color: white;
+   text-align: center;
+}
+
+footer a {
+    color: #fff;
+
+}
+
+footer a:hover {
+    color:  #1176a7f2;
+}

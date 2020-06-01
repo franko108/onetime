@@ -1,0 +1,24 @@
+-# app/views/onetime/index.haml
+- @title = "Onetime"
+
+%section.articles
+  .column.is-8.is-offset-2
+    .card.article
+      .card-content
+        .media
+          .media-content.has-text-centered
+            %h3.title.article-title= 'Create one time content:'
+            .tags.error= @error
+        .content.article-body
+        = form_tag '/create', :class => 'create-form', :method => 'post' do
+          = flash_tag(:notice)
+          = field_set_tag do
+            %p
+              = ''
+            %p
+            %p
+              = text_area_tag :secret, :placeholder => 'Enter your word or short text here (till 255 characters)', :value => params[:secret]
+              = submit_tag "CREATE", :class => 'button is-primary is-fullwidth'
+        %p
+        <hr>
+        %p   After submit a form, onetime link will be generated to access data you enter.

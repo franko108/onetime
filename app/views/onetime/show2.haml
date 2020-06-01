@@ -1,0 +1,20 @@
+-# app/views/onetime/show.haml
+
+%section.articles
+  .column.is-8.is-offset-2
+    .card.article
+      .card-content
+        .media
+          .media-content.has-text-centered
+            %h3.title.article-title= ' One time content:'
+            .tags.has-addons.level-item= ''
+        .content.article-body
+          %blockquote<
+            %div
+              %strong= simple_format(@onetime.content)
+          %p
+          <hr>
+          %strong='Make sure to copy content above, it will be deleted for good!'
+          %p
+          %p=@wrong
+          %p= link_to ' Create another onetime content ' , '/'

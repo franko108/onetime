@@ -1,0 +1,28 @@
+-# app/views/layouts/application.haml
+!!! Strict
+%html
+  %head
+    %title= "Onetime Content"
+    = stylesheet_link_tag 'bulma', 'application'
+    = javascript_include_tag 'jquery', 'application'
+  %body
+    %nav.navbar
+      %div.container
+        .navbar-brand
+          %a.navbar-item{:href => "/"}
+            = image_tag("sonnen-logo.png")
+          %span.navbar-burger.burger{"data-target" => "navbarMenu"}
+            %span
+            %span
+            %span
+    %section.hero.is-info.is-medium.is-bold
+      .hero-body
+        .container.has-text-centered
+          %h1.title
+
+    %div.container
+      #main= yield
+    <hr>
+    %footer
+      <hr>
+      %p <a href="https://sonnen.de">Sponsored by Sonnen</a>  |  <a href="#">Follow us on Github</a>

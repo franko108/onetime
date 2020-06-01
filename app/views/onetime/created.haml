@@ -1,0 +1,15 @@
+-# app/views/onetime/created.haml
+
+%section.articles
+  .column.is-8.is-offset-2
+    .card.article
+      .card-content
+        .media
+          .media-content.has-text-centered
+            %h3.title.article-title= 'Data created, onetime link:'
+        .content.article-body
+          =  @web_url
+          %p
+          %strong='Make sure to copy generated link that will show entered data.'
+          %p
+          %p= link_to ' Create another onetime content ' , '/'
