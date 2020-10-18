@@ -7,7 +7,7 @@ There are already several similar services but somebody might need or want to ha
 The concept is simple, enter data in a provided form, submit it and unique uuid will be generated for the link usage. The program will create a row in the database with generated uuid for link and content as data.  
 On the get request of provided URL, data will be shown in the browser and deleted from database.
 
-Program will be available internally on [onetime.sonnen.de](https://onetime.sonnen.de)
+Demo is available internally on [onetime.it-pu.com](https://onetime.it-pu.com)
 
 Program is build on Ruby/Padrino with Sqlite3 as a database. Haml is used template.   
 GUI is inspired by [Padrino Ruby tutorial](https://github.com/padrino/blog-tutorial), thanks for that.
