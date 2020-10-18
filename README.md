@@ -7,7 +7,7 @@ There are already several similar services but somebody might need or want to ha
 The concept is simple, enter data in a provided form, submit it and unique uuid will be generated for the link usage. The program will create a row in the database with generated uuid for link and content as data.  
 On the get request of provided URL, data will be shown in the browser and deleted from database.
 
-Demo is available internally on [onetime.it-pu.com](https://onetime.it-pu.com)
+Demo is available on [onetime.it-pu.com](https://onetime.it-pu.com)
 
 Program is build on Ruby/Padrino with Sqlite3 as a database. Haml is used template.   
 GUI is inspired by [Padrino Ruby tutorial](https://github.com/padrino/blog-tutorial), thanks for that.
@@ -23,13 +23,13 @@ On Ubuntu 20.04 required versions are available out of box with command:
 On Ubuntu 18.04 make sure to have installed required programs:  
 `$ sudo apt install gcc make libc6-dev libsqlite3-dev sqlite3`
 
-Optionally for a new Ruby version on Ubuntu there is command:  
+Optionally, for a new Ruby version on Ubuntu there is command:  
 `sudo snap install ruby`
 
 On CentOS 7, newer version of Ruby shall be compiled. Install dependencies with command:  
 `# yum install -y gcc-6 bzip2 openssl-devel sqlite-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel`
 
-Grab Ruby source code from [here](https://www.ruby-lang.org/en/downloads/) , compile it and install according to instructions within README.
+Grab Ruby source code from [here](https://www.ruby-lang.org/en/downloads/) , compile it and install according to instructions within their README.
 
 Install *Ruby Padrino* framework ([official web](http://padrinorb.com)):  
 `$ gem install padrino` 
@@ -37,7 +37,7 @@ Install *Ruby Padrino* framework ([official web](http://padrinorb.com)):
 ## Installation  
 
 Clone this repo on desired location with:   
-`$ git clone https://git.sonnenbatterie.de:infrastructure/onetime.git`
+`$ git clone https://github.com/franko108/onetime`
 
 Install dependencies defined within *Gemfile*:  
 `$ bundle`
