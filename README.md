@@ -31,7 +31,8 @@ On CentOS 7, newer version of Ruby shall be compiled. Install dependencies with 
 
 Grab Ruby source code from [here](https://www.ruby-lang.org/en/downloads/) , compile it and install according to instructions within their README.
 
-Install *Ruby Padrino* framework ([official web](http://padrinorb.com)):  
+---
+After installation of Ruby on any linux flavor, install *Ruby Padrino* framework ([official web](http://padrinorb.com)):  
 `$ gem install padrino` 
 
 ## Installation  
