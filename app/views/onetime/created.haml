@@ -6,10 +6,10 @@
       .card-content
         .media
           .media-content.has-text-centered
-            %h3.title.article-title= 'Data created, onetime link:'
+            %h3.title.article-title= 'One-Time Link generated:'
         .content.article-body
-          =  @web_url
+          %input{:name => "link", :type => "text", :value => @web_url, :onclick => "this.select()", :style => "width:100%; padding: 6px; mardin: 6px;"}
           %p
-          %strong='Make sure to copy generated link that will show entered data.'
+          %strong  Make sure to copy the generated link, that allows <u>one-time</u> access to the secret you entered.
           %p
-          %p= link_to ' Create another onetime content ' , '/'
+          %p= link_to 'Create another onetime link ...' , '/'

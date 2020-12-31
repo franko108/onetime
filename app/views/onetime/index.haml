@@ -7,7 +7,7 @@
       .card-content
         .media
           .media-content.has-text-centered
-            %h3.title.article-title= 'Create one time content:'
+            %h3.title.article-title= 'ENTER SECRET:'
             .tags.error= @error
         .content.article-body
         = form_tag '/create', :class => 'create-form', :method => 'post' do
@@ -17,8 +17,9 @@
               = ''
             %p
             %p
-              = text_area_tag :secret, :placeholder => 'Enter your word or short text here (till 255 characters)', :value => params[:secret]
-              = submit_tag "CREATE", :class => 'button is-primary is-fullwidth'
+              = text_area_tag :secret, :placeholder => 'Enter your secret here (up to 255 characters)...', :value => params[:secret]
+              = submit_tag "CREATE ONETIME LINK to SECRET", :class => 'button is-primary is-fullwidth'
         %p
         <hr>
-        %p   After submit a form, onetime link will be generated to access data you enter.
+        %p   After you submit your secret, a <b>onetime link</b> will be generated.
+        %p   You can then share this link with someone, who can see your secret <b>only once</b>.

@@ -6,14 +6,17 @@
       .card-content
         .media
           .media-content.has-text-centered
-            %h3.title.article-title= 'Click button bellow to see one time content:'
+            %h3.title.article-title  Click the button below to see a secret <u>once</u>:
             .tags.has-addons.level-item= ''
         .content.article-body
           %div
-          %a.button{:href => @url_path, :class => 'button is-primary is-fullwidth'} PROCEED
+          <hr>
+          %ul
+            %li The secret will be visible only <u>once</u> - copy it somewhere safe!
+            %li Make sure nobody except yourself can see your screen before you click!
           %p
           <hr>
-          %strong='Note: it will be visible only once!'
+          %a.button{:href => @url_path, :class => 'button is-primary is-fullwidth'} PROCEED
           %p
           %p=@wrong
-          %p= link_to ' Create another onetime content ' , '/'
+          %p= link_to 'Create another onetime secret link ' , '/'
