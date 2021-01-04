@@ -84,7 +84,7 @@ WantedBy=multi-user.target
 Replace */path/to/onetime* with absolute path to application and `httpd` with `nginx` or `haproxy` or whatever you have in front of the ruby application.  
 In this example, privileges are given to a simple user. Systemd will try to restart application within 3 second if inactive. This is also an optional parameter.
 
-If application is hosted on another server, make sure to listen all ports, not just a locahost. In that case, replace the line ExecStart with:  
+If application is hosted on another server, make sure to listen other hosts, not just a locahost. In that case, replace the line ExecStart with:  
 `ExecStart=/usr/local/bin/ruby /path/to/onetime/bin/padrino s -e production -c=/path/to/onetime/ -h=0.0.0.0`
 
 (replace *h=0.0.0.0* with IP of your proxy server, or leave it like that if there are more than one server that act as a proxy)
