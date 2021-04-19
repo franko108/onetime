@@ -17,7 +17,7 @@
               = ''
             %p
             %p
-              = text_area_tag :secret, :placeholder => 'Enter your secret here (up to 255 characters)...', :value => params[:secret]
+              = text_area_tag :secret, :placeholder => 'Enter your secret here (up to 255 characters)...', :value => params[:secret], :autofocus => true
               = submit_tag "CREATE ONETIME LINK to SECRET", :class => 'button is-primary is-fullwidth'
         %p
         <hr>
